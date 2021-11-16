@@ -22,14 +22,29 @@ builders:
       options:
         force: false
         enabled: true
-        copyright: "Copyright dotup IT solutions - Peter Ullrich"
+        copyright: "dotup IT solutions - Peter Ullrich"
         text: [
           "// Some additional ",
           "// header text",
         ]
 ```
 
-## install
+Generated header:
+
+```dart
+// Powered by https://dotup.de
+// Copyright (c) 2021, dotup IT solutions - Peter Ullrich
+// Some additional
+// header text
+
+...your source code
+```
+
+> The end of the header is recognized by a blank line.
+> If 'force' is true, headers will be removed and generated again
+
+
+## Install
 `flutter pub add dotup_dart_copyright_builder --dev`
 
 ## Links
