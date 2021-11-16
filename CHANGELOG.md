@@ -5,3 +5,7 @@
 ## 1.0.1
 
 - Readme
+
+## 1.0.2
+
+- Build file removed
