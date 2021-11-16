@@ -9,3 +9,7 @@
 ## 1.0.2
 
 - Build file removed
+
+## 1.0.3
+
+- Readme

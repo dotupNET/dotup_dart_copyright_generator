@@ -29,6 +29,15 @@ builders:
         ]
 ```
 
+Run: 
+```shell
+dart pub run build_runner build
+
+or
+
+flutter pub run build_runner build
+```
+
 Generated header:
 
 ```dart
