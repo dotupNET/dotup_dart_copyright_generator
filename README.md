@@ -1,39 +1,45 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+# dotup_dart_copyright_builder
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Dart package that generates a header for each dart file.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Usage example: build.yaml
 
-```dart
-const like = 'sample';
+```yaml
+
+builders:
+
+  copyrightBuilder:
+    import: "package:dotup_dart_copyright_builder/builder.dart"
+    builder_factories: ["copyrightBuilder"]
+    build_extensions: {".dart": [".copyright.dart"]}
+    build_to: source
+    auto_apply: root_package
+    applies_builders: ["copyrightBuilder"]
+    defaults:
+      options:
+        force: false
+        enabled: true
+        copyright: "Copyright dotup IT solutions - Peter Ullrich"
+        text: [
+          "// Some additional ",
+          "// header text",
+        ]
 ```
 
-## Additional information
+[dotup.de](https://dotup.de)
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+## install
+`flutter pub add dotup_dart_copyright_builder --dev`
+
+## Links
+
+> ### dotup_dart_copyright_builder on [pub.dev](https://pub.dev/packages/dotup_dart_copyright_builder)
+>
+> ### Other widgets on [pub.dev](https://pub.dev/packages?q=dotup)
+> 
+> ### Other open source flutter projects on [Github](https://github.com/search?q=dotup_flutter)
+> 
+> ### Other open source dart projects on [Github](https://github.com/search?q=dotup_dart)
