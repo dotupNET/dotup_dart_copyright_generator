@@ -2,7 +2,7 @@
 builders:
 
   copyrightBuilder:
-    import: "package:copyright_generator/builder.dart"
+    import: "package:dotup_dart_copyright_builder/builder.dart"
     builder_factories: ["copyrightBuilder"]
     build_extensions: {".dart": [".copyright.dart"]}
     build_to: source
@@ -10,8 +10,8 @@ builders:
     applies_builders: ["copyrightBuilder"]
     defaults:
       options:
-        force: true
-        enabled: false
+        force: false
+        enabled: true
         copyright: "Copyright dotup IT solutions - Peter Ullrich"
         text: [
           "// More text",

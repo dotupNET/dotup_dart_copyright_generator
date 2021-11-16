@@ -14,10 +14,14 @@ class CopyrightBuilder implements Builder {
 
   @override
   Future<void> build(BuildStep buildStep) async {
+    if (options.config['enabled'] != true) {
+      return;
+    }
+
     var force = options.config['force'];
 
     const headerStart = '// Powered by https://dotup.de';
-    const headerEnd = '// copyright_generator - DO NOT CHANGE LINES ABOVE!';
+    // const headerEnd = '// copyright_generator - DO NOT CHANGE LINES ABOVE!';
 
     var inputId = buildStep.inputId;
 
@@ -31,7 +35,7 @@ class CopyrightBuilder implements Builder {
     final hasHeader = await stream.first == headerStart;
 
     final headerEndContent = await stream.firstWhere(
-      (e) => e == headerEnd,
+      (e) => e!.isEmpty,
       orElse: () => null,
     );
 
@@ -39,7 +43,7 @@ class CopyrightBuilder implements Builder {
 
     if (hasHeader && headerEndContent != null) {
       if (force == true) {
-        sourceCode = await stream.join();
+        sourceCode = await stream.join('\n');
       } else {
         sourceCode = '';
       }
@@ -62,7 +66,7 @@ class CopyrightBuilder implements Builder {
         final year = DateTime.now().year;
         add = '// Copyright (c) $year$add';
 
-        final newContent = '$headerStart\n$add\n$headerEnd\n\n$sourceCode';
+        final newContent = '$headerStart\n$add\n\n$sourceCode';
         await File(buildStep.inputId.path).writeAsString(newContent);
       }
     } catch (e) {
