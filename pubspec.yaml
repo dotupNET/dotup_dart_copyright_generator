@@ -1,0 +1,13 @@
+name: dotup_dart_copyright_builder
+description: Generates copyright header for each dart file
+version: 1.0.0
+homepage: https://dotup.de
+
+environment:
+  sdk: '>=2.14.4 <3.0.0'
+
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.16.0
+dependencies: 
+  build: ^2.1.1
