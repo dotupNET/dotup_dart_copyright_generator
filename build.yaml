@@ -14,8 +14,6 @@ builders:
         enabled: true
         copyright: "Copyright dotup IT solutions - Peter Ullrich"
         text: [
-          "// More text",
-          "// More text",
-          "// More text",
+          "// Go to https://flutter-apps.ml and check out the awesome flutter simulator",
         ]
 
