@@ -56,16 +56,10 @@ Generated header:
 > ### Other open source flutter projects on [Github](https://github.com/search?q=dotup_flutter)
 > 
 > ### Other open source dart projects on [Github](https://github.com/search?q=dotup_dart)
-<br/><br/>
+
 # Flutter simulator | DFFP3
-> <br/>
->
 > Go to [https://flutter-apps.ml](https://flutter-apps.ml) and check out the awesome flutter simulator !
-> <br/><br/>
 
 ![Flutter simulator](https://flutter-apps.ml/wp-content/uploads/2021/10/Bildschirmfoto-2021-10-31-um-11.34.42-2048x1335.png)
 
-> <br/>
->
 > ## [dotup IT solutions](https://dotup.de)
-> <br/>
