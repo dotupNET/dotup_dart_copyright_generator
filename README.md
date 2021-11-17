@@ -1,4 +1,4 @@
-![flutter](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![forks](https://badgen.net/github/forks/dotupNET/dotup_dart_copyright_generator/) ![stars](https://badgen.net/github/stars/dotupNET/dotup_dart_copyright_generator/)
+![dart](https://badgen.net/pub/flutter-platform/xml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![forks](https://badgen.net/github/forks/dotupNET/dotup_dart_copyright_generator/) ![stars](https://badgen.net/github/stars/dotupNET/dotup_dart_copyright_generator/)
 
 # dotup_dart_copyright_builder
 
